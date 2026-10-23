@@ -1,0 +1,65 @@
+insert into concept_notes
+  (domain, topic, keywords, explanation_en, analogy_en, exam_relevance, related_topics)
+values
+('cloud_concepts', 'Cloud computing',
+ '{cloud,cloud computing,what is cloud,internet,on-demand}',
+ 'Cloud computing means using computing resources such as servers, storage, databases and software over the internet, instead of owning and running them yourself.',
+ 'Like renting a stall in a busy market instead of building your own shop: you use the space when you need it and do not maintain the building.',
+ 'AZ-900 starts with why organisations adopt the cloud and the benefits it gives them.',
+ '{Public private and hybrid cloud,Consumption-based model}'),
+
+('cloud_concepts', 'Shared responsibility model',
+ '{shared responsibility,responsibility,security responsibility,who is responsible}',
+ 'In the cloud, security duties are split between the provider and the customer. The provider secures the physical datacenters and core infrastructure. The customer always remains responsible for their own data, accounts and access. The split for everything in between depends on the service type: IaaS, PaaS or SaaS.',
+ 'Like renting a house: the landlord secures the building and the gate, but you must lock your own door and look after what is inside.',
+ 'AZ-900 asks who is responsible for what across IaaS, PaaS and SaaS.',
+ '{IaaS PaaS and SaaS,Public private and hybrid cloud}'),
+
+('cloud_concepts', 'Public private and hybrid cloud',
+ '{public cloud,private cloud,hybrid cloud,hybrid,deployment model}',
+ 'A public cloud is owned by a provider and shared by many customers. A private cloud is used by a single organisation, often in its own datacenter. A hybrid cloud combines both, so workloads can sit where they fit best.',
+ 'Public cloud is like a minibus anyone can ride, private cloud is like your own company vehicle, and hybrid is using both depending on the trip.',
+ 'AZ-900 compares these three models and when each one fits.',
+ '{Cloud computing,Shared responsibility model}'),
+
+('cloud_concepts', 'Consumption-based model',
+ '{consumption,pay as you go,pay-as-you-go,pricing,cost model}',
+ 'In the consumption-based model you pay only for the resources you actually use, with no large upfront purchase. If you use less, you pay less.',
+ 'Like buying mobile airtime or electricity prepaid: you pay for what you use instead of buying a whole generator upfront.',
+ 'AZ-900 contrasts this with buying and owning hardware, and links it to cost savings.',
+ '{CapEx and OpEx,Elasticity}'),
+
+('cloud_concepts', 'CapEx and OpEx',
+ '{capex,opex,capital expenditure,operational expenditure,upfront cost}',
+ 'Capital expenditure (CapEx) is a large upfront spend on assets you own, such as servers. Operational expenditure (OpEx) is ongoing spending on services as you use them. Cloud shifts most spending from CapEx to OpEx.',
+ 'CapEx is like buying a delivery truck outright; OpEx is paying for each trip with a hired driver.',
+ 'AZ-900 expects you to tell the two apart and explain why the cloud favours OpEx.',
+ '{Consumption-based model,Cloud computing}'),
+
+('cloud_concepts', 'High availability',
+ '{high availability,availability,uptime,sla,always on,reliable}',
+ 'High availability means designing a service so it stays running even when parts of it fail. This is usually done by running copies in more than one place.',
+ 'Like a shop with a backup generator and a second entrance: if power or one door fails, customers can still be served.',
+ 'AZ-900 links high availability to Availability Zones, Regions and service level agreements.',
+ '{Availability Zones,Scalability}'),
+
+('cloud_concepts', 'Scalability',
+ '{scalability,scale,scale up,scale out,vertical,horizontal}',
+ 'Scalability is the ability to handle more work by adding resources. Scaling up (vertical) makes one machine more powerful. Scaling out (horizontal) adds more machines.',
+ 'Like a restaurant that either buys a bigger stove (scale up) or opens more cooking stations (scale out) when more people arrive.',
+ 'AZ-900 asks you to recognise vertical versus horizontal scaling.',
+ '{Elasticity,High availability}'),
+
+('cloud_concepts', 'Elasticity',
+ '{elasticity,elastic,autoscale,auto-scale,automatic scaling}',
+ 'Elasticity is the ability to automatically add or remove resources as demand rises and falls, so you do not pay for capacity you are not using.',
+ 'Like a wedding caterer who brings extra staff only for the busy hours and sends them home afterwards.',
+ 'AZ-900 separates elasticity (automatic, up and down) from scalability (the ability to grow).',
+ '{Scalability,Consumption-based model}'),
+
+('cloud_concepts', 'IaaS PaaS and SaaS',
+ '{iaas,paas,saas,infrastructure as a service,platform as a service,software as a service}',
+ 'IaaS gives you basic infrastructure such as virtual machines, storage and networking, and you manage the rest. PaaS gives you a ready platform for building and running apps without managing servers. SaaS gives you finished software to use, such as email, with almost nothing to manage.',
+ 'IaaS is renting an empty room, PaaS is renting a furnished kitchen where you just cook, and SaaS is ordering a meal that is already prepared.',
+ 'AZ-900 tests the three service types and how responsibility changes across them.',
+ '{Shared responsibility model,Virtual Machines}');
